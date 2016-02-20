@@ -39,7 +39,7 @@
 </head>
 
 <body>
-  <h1>Zip Codes affected by gentifrication reducing their amount of small businesses:</h1>
+  <h1>Amount of small businesses per Zip Code in New York: Accommodation and food services</h1>
   <div id='arrayItems'></div>
 
 
@@ -109,15 +109,15 @@
   });
   var myMapData = [
     {
-      name: "ZIP 10172 (New York, NY)",
+      name: "ZIP 10172 (New York, NY): 1",
       coord: [40.755494,-73.97447]
     },
     {
-      name: "ZIP 10081 (New York, NY)",
+      name: "ZIP 10081 (New York, NY): 1",
       coord: [40.780751,-73.977182]
     },
     {
-      name: "ZIP 10041 (New York, NY)",
+      name: "ZIP 10041 (New York, NY): 1",
       coord: [40.703042,-74.01009]
     },
   ]
@@ -141,7 +141,7 @@
   //Now let's use our custom-made array to make many markers
   myMapData.forEach(function(element) {
     var marker = L.marker(element.coord).addTo(map);
-    marker.bindPopup("<b>ZIP CODE with decrement in number of small bussines</b><br>ZIP CODE" + element.name)
+    marker.bindPopup("<b>Number of small businesses</b><br>2013: " + element.name)
   });
   var panOptions = {
     animate: true,
