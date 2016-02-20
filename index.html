@@ -110,6 +110,7 @@
   var myMapData = [
     {
       name: "ZIP 10172 (New York, NY): 1",
+      name1: "ZIP 10172 (New York, NY): 1",
       coord: [40.755494,-73.97447]
     },
     {
@@ -141,7 +142,7 @@
   //Now let's use our custom-made array to make many markers
   myMapData.forEach(function(element) {
     var marker = L.marker(element.coord).addTo(map);
-    marker.bindPopup("<b>Number of small businesses</b><br>2013: " + element.name)
+    marker.bindPopup("<b>Number of small businesses</b><br>2013 " + element.name)
   });
   var panOptions = {
     animate: true,
