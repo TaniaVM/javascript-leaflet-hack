@@ -39,7 +39,7 @@
 </head>
 
 <body>
-  <h1>Check out these items that I loaded from an array:</h1>
+  <h1>Zip Codes affected by gentifrication reducing their amount of small businesses:</h1>
   <div id='arrayItems'></div>
 
 
@@ -104,21 +104,21 @@
   }
   console.log(myObject.students[1]);
   //CartoDB Basemap
-  var layer = L.tileLayer('http://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}.png',{
+  var layer = L.tileLayer('http://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png',{
     attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, &copy; <a href="http://cartodb.com/attributions">CartoDB</a>'
   });
   var myMapData = [
     {
-      name: "Joe's Pizza",
-      coord: [40.699542,-73.993767]
+      name: "ZIP 10172 (New York, NY)",
+      coord: [40.755494,-73.97447]
     },
     {
-      name: "Percy's Pizza",
-      coord: [40.729178,-74.001390]
+      name: "ZIP 10081 (New York, NY)",
+      coord: [40.780751,-73.977182]
     },
     {
-      name: "Pauly Gee's",
-      coord: [40.729600, -73.958695]
+      name: "ZIP 10041 (New York, NY)",
+      coord: [40.703042,-74.01009]
     },
   ]
 //   //Stamen Watercolor Basemap
@@ -141,7 +141,7 @@
   //Now let's use our custom-made array to make many markers
   myMapData.forEach(function(element) {
     var marker = L.marker(element.coord).addTo(map);
-    marker.bindPopup("<b>Hello world!</b><br>I am " + element.name)
+    marker.bindPopup("<b>ZIP CODE with decrement in number of small bussines</b><br>ZIP CODE" + element.name)
   });
   var panOptions = {
     animate: true,
